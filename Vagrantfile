@@ -2,7 +2,7 @@
 # Install dummy vagrant box:
 # vagrant box add http://vdcpuppet/pub/vagrant/vrealize.box --name vrealize
 
-email = 'david.stark@sky.uk'
+email = 'chunkylover53@aol.com'
 
 Vagrant.configure("2") do |config|
 
