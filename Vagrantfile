@@ -95,12 +95,11 @@ Vagrant.configure("2") do |config|
     node.vm.box = "vrealize"
   end
 
-  config.vm.define "hiera" do |node|
+  config.vm.define "quick" do |node|
     node.vm.provider "vrealize" do |v|
       v.catalog_item_id = 'fa58e74c-825e-418d-9c7a-e0cf9ef703c9'
     end
     node.vm.box = "vrealize"
-    node.vm.provision "shell", inline: "yum install hiera"
     node.vm.synced_folder ".", "/vagrant", disabled: true
   end
 
